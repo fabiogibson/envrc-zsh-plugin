@@ -1,8 +1,9 @@
-# envrc-zsh-plugin
+envrc-zsh-plugin
+=================
+
 Oh-my-zsh plugin to load or unload environment variables depending on the current directory.
 
-Quick start guide
-=================
+# Quick start guide
 
 Installation
 --------------------
