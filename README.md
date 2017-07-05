@@ -12,12 +12,12 @@ First, download the plugin to your $ZSH_CUSTOM/plugins directory.
 
 #### using curl
 
-    curl -o $ZSH_CUSTOM/plugins/envrc.plugin.zsh https://raw.githubusercontent.com/fabiogibson/envrc-zsh-plugin/master/envrc.plugin.zsh
+    curl --create-dirs -o $ZSH_CUSTOM/plugins/envrc.plugin.zsh https://raw.githubusercontent.com/fabiogibson/envrc-zsh-plugin/master/envrc.plugin.zsh
     
 
 #### using wget
 
-    wget -O $ZSH_CUSTOM/plugins/envrc.plugin.zsh https://raw.githubusercontent.com/fabiogibson/envrc-zsh-plugin/master/envrc.plugin.zsh
+    mkdir -p $ZSH_CUSTOM/plugins/envrc && wget -O $ZSH_CUSTOM/plugins/envrc/envrc.plugin.zsh https://raw.githubusercontent.com/fabiogibson/envrc-zsh-plugin/master/envrc.plugin.zsh
 
 Now, edit your ~/.zshrc and add "envrc" (without quotes) to your plugins list. 
 
