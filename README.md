@@ -19,7 +19,7 @@ First, download the plugin to your $ZSH_CUSTOM/plugins directory.
 
     wget -O $ZSH_CUSTOM/plugins/envrc.plugin.zsh https://raw.githubusercontent.com/fabiogibson/envrc-zsh-plugin/master/envrc.plugin.zsh
 
-Now, edit your ~/.zshrc and add "envrc" (whitout quotes) to your plugins list. 
+Now, edit your ~/.zshrc and add "envrc" (without quotes) to your plugins list. 
 
     plugins=(git ... envrc)
 
