@@ -36,4 +36,4 @@ The file shall contain one variable per line, in the following format:
 
     VAR_NAME=VAR_VALUE
 
-Your variables will automatically set and unset every time you cd or leave a project directory.
+Your variables will be automatically set and unset every time you cd or leave a project directory.
