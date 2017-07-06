@@ -3,7 +3,7 @@ envrc-zsh-plugin
 
 Oh-my-zsh plugin to automatically load or unload ENV variables from .envrc file depending on the current directory.
 
-The biggest difference between this plugin and the oh-my-zsh bundled [dotenv](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/dotenv) is that it unloads all variables when you leave the project's root directory. 
+The biggest difference between this plugin and the oh-my-zsh bundled [dotenv](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/dotenv) is that it unloads all variables when you leave the project's directory. 
 
 # Quick start guide
 
