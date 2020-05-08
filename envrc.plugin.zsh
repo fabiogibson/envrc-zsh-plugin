@@ -20,7 +20,7 @@ if [[ ! $DISABLE_ENVRC -eq 1 ]]; then
 
   _unload_env() {
     while IFS== read -r var _; do
-      unset $var
+      [[ -n "$var" && ! $var =~ ^#.* ]] &&  unset "$var"
     done <"$ENVRC/.envrc"
 
     echo $fg[yellow]"*** Environment unloaded\n"
@@ -28,7 +28,7 @@ if [[ ! $DISABLE_ENVRC -eq 1 ]]; then
 
   _load_env() {
     while IFS= read -r var; do
-      export "$var"
+      [[ -n "$var" && ! $var =~ ^#.* ]] && export "$var"
     done < ".envrc"
 
     echo $fg[green]"*** Environment loaded\n"
