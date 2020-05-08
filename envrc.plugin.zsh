@@ -20,7 +20,7 @@ if [[ ! $DISABLE_ENVRC -eq 1 ]]; then
 
   _unload_env() {
     while IFS== read -r var _; do
-      [[ -n "$var" && ! $var =~ ^#.* ]] &&  unset "$var"
+      [[ -n "$var" && ! $var =~ ^#.* ]] && unset "$var"
     done <"$ENVRC/.envrc"
 
     echo $fg[yellow]"*** Environment unloaded\n"
